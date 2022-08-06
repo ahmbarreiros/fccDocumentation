@@ -7,8 +7,8 @@
 
 /* NAV BAR */
 #navbar {
- width: 16%;
- height: 100vh;
+ width: 300px;
+ height: 100%;
  position: fixed;
  top: 0;
  left: 0 ;
@@ -39,13 +39,17 @@
  color: rgb(66, 66, 66);
 }
 
+#reference > ul > li > a:visited {
+  color:blue;
+}
+
 #last {
  border-bottom: none;
 }
 
 main {
- margin-left: 16%;
- padding: 40px;
+ margin-left: 300px;
+ padding: 30px;
 }
 
 #siteHeader {
@@ -60,3 +64,68 @@ main {
 
 /* MAIN CONTENT */
 
+h2 {
+ font-weight: normal;
+ font-size: 1.8em;
+ padding: 5px 20px 20px 5px;
+}
+
+p {
+ margin-bottom: 5px;
+ margin-left: 10px;
+ color: rgb(73, 73, 73);
+ font-size: 15.35px;
+ padding: 10px 10px 0px 1px;
+ position: relative;
+ top: -10px;
+ left: 10px;
+ line-height: 24px;
+}
+
+main > section > ul {
+  color: rgb(73, 73, 73);
+  font-size: 15.35px;
+  position: relative;
+  left: 30px;
+  top: -5px;
+  line-height: 25px;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+main > section > ul > li {
+ margin-bottom: 15px;
+}
+
+.codeSection{
+ display: block;
+ position: relative;
+ word-break: normal;
+ word-wrap: normal;
+ text-align: left;
+ font-family: monospace;
+ background-color: rgb(240, 240, 239);
+ color: rgb(66, 66, 66);
+ border-radius: 2px;
+ margin: 10px;
+ padding: 20px;
+}
+
+
+@media (max-width: 900px){
+  #navbar {
+  width: 100%;
+  top: 0;
+  position: relative;
+  }
+
+  main {
+    margin-left: auto
+  }
+
+  #navbar>header>ul {
+    height: 220px;
+    overflow: auto;
+    border: 2px solid black;
+  }
+}
